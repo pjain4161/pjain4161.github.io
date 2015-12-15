@@ -1,0 +1,162 @@
+
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hexa a portfolio bootstrap Website Template | Single-Page :: w3layouts</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start plugins -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+		function validate() {
+	    var x = document.forms["myForm"]["fname"].value;
+	    if (x == null || x == "" || x == "Name") {
+	        alert("Name must be filled out");
+	        return false;
+	    }
+	    var x = document.forms["myForm"]["email"].value;
+	    if (x == null || x == "" || x=="Email") {
+	        alert("Email must be filled out");
+	        return false;
+	    }
+	}
+	</script>
+<!----font-Awesome----->
+   	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!----font-Awesome----->
+</head>
+<body>
+<div class="header_bg" id="home"><!-- start header -->
+<div class="container">
+	<div class="row header text-center specials">
+		<div class="h_logo">
+			<a href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a>
+		</div>
+				<nav class="top-nav">
+			<ul class="top-nav nav_list">
+				<ul class="top-nav nav_list">
+				<li><a href="portfolio.html">Projects</a></li>
+				<li class="page-scroll"><a href="index.html">Home</a></li>
+				<li class="page-scroll"><a href="#contact">get in touch</a></li>
+			</ul>
+			</ul>
+			<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+		</nav>
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+<div class="blog"><!-- start main -->
+	<div class="container">
+		<div class="main row">
+			<h2 class="style">Consumable Management System</h2>
+			<div class="details row">
+				<div class="col-md-6">
+					<img src="images/Consumable_Management_System.jpg" alt="" class="img-responsive"/>
+				</div>
+				<div class="col-md-6">
+					<b><h4>Challenge</h4></b><p class="para">
+					While working at Indian Oil Corporation Ltd, I realized that employees were maintaining records of various commonly used consumables like floppies, cartridges, CDs, pen drives, etc. manually. As a result, they were more susceptible to making mistakes. These small mistakes result in huge loss to the company. Sometimes the vendors deliver more consumables than required and charge extra money, or deliver wrong products.
+					So, I intended to make 'Consumable Management System', a system which would maintain the
+					records of these consumables electronically. The consumables are very large in number, so there was
+					a need to maintain the records of these items in a systematic way. Since everything has been
+					computerized, the need for such consumables has increased and hence the need to manage these items.  </p>
+					<b><h4>Product</h4></b><p class="para">
+					I made a website wherein each employee could make an account by connecting to the server. Once the account is made, he/she could login into the system by entering the user name and password. The employee then made request for the consumables he/she needs. The admin could login into the system by entering the unique password and access the indent page which contains information of all consumables required by all the employees. The admin could also access the records like period-wise purchase, period wise expenses etc  </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<b><h4>Process</h4></b><p class="para">
+			I interviewed employees at distinct designations and across various branches of the company to understand their process and how errors used to creep in. Employees used to go to the issue officer for the consumables required by them. The officer then checked the existing supplies by looking into the records. All the records were updated manually, which was a tedious job. In case the supplies were limited, the officer ordered the vendors for the required consumables. After the vendors gave their rates, the contract was given to the vendor, who gave the best offers. The vendors brought the required consumables and records were updated manually. Consumables were then given to respective employee as per his/her requirement.
+			I got to understand the flow of information and made several prototypes for the same. The product was viewed with a sense of providing better, efficient and less time-consuming system for maintaining the consumables in the various branches of Indian oils</p>
+			<div class="read_more">
+				<a href="read_more.html">READ MORE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="portfolio.html">BACK</a>
+			</div>
+		</div>
+	</div>
+</div><!-- end main -->
+<div class="footer_bg" id="contact"><!-- start footer -->
+<div class="container">
+	<div class="row footer">
+		<div class="col-md-8 contact_left">
+			<h3>get in touch</h3>
+			<p>In order to get in touch use the contact form below:</h4>
+			<form name="myForm" method="post" action="contact.html" onsubmit="return(validate());">
+				<input type="text" name="fname" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+				<input type="text" name="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+				<input type="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+				<textarea onfocus="if(this.value == 'Your Message here....') this.value='';" onblur="if(this.value == '') this.value='Your Message here....;" >Your Message here....</textarea>
+				<span class="pull-right"><input type="submit" value="submit us"></span>
+			</form>
+		</div>
+		<div class="col-md-4  contact_right">
+			<p><span>A short summary about me: </span> Experienced Technology Analyst having successfully delivered a broad range of IT projects for clients in various domains. Proven track record in IT strategy and Project Management, Client Relationships and Web Technologies.</p>
+			<ul class="list-unstyled address">
+				<li><i class="fa fa-map-marker"></i><span>1929 Delaware Street, Berkeley</span></li>
+				<li><i class="fa fa-phone"></i><span>510 944 4203</span></li>
+				<li><i class="fa fa-envelope"></i><a href="mailto:pjain4161@gmail.com">pjain4161(at)gmail.com</a></li>
+			</ul>
+		</div>		
+	</div>
+</div>
+</div>
+<div class="footer1_bg"><!-- start footer1 -->
+	<div class="container">
+		<div class="row  footer">
+			<div class="copy text-center">
+				<p class="link"><span>&#169; All rights reserved | Template by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+				<a href="#home" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+		<script type="text/javascript">
+				$(function() {
+				  $('a[href*=#]:not([href=#])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				        $('html,body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+				      }
+				    }
+				  });
+				});
+		</script>
+		<!---- start-smoth-scrolling---->		
+	</div>
+</div>
+</body>
+</html>

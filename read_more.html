@@ -1,0 +1,163 @@
+
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hexa a portfolio bootstrap Website Template | Single-Page :: w3layouts</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start plugins -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+		function validate() {
+	    var x = document.forms["myForm"]["fname"].value;
+	    if (x == null || x == "" || x == "Name") {
+	        alert("Name must be filled out");
+	        return false;
+	    }
+	    var x = document.forms["myForm"]["email"].value;
+	    if (x == null || x == "" || x=="Email") {
+	        alert("Email must be filled out");
+	        return false;
+	    }
+	}
+	</script>
+<!----font-Awesome----->
+   	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!----font-Awesome----->
+</head>
+<body>
+<div class="header_bg" id="home"><!-- start header -->
+<div class="container">
+	<div class="row header text-center specials">
+		<div class="h_logo">
+			<a href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a>
+		</div>
+				<nav class="top-nav">
+			<ul class="top-nav nav_list">
+				<ul class="top-nav nav_list">
+				<li><a href="portfolio.html">Projects</a></li>
+				<li class="page-scroll"><a href="index.html">Home</a></li>
+				<li class="page-scroll"><a href="#contact">get in touch</a></li>
+			</ul>
+			</ul>
+			<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+		</nav>
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+<div class="blog"><!-- start main -->
+	<div class="container">
+		<div class="main row">
+			<h2 class="style">Consumable Management System</h2>
+			<div class="details row">
+				<div class="col-md-6">
+					<img src="images/Consumable_Management_System.jpg" alt="" class="img-responsive"/>
+				</div>
+				<div class="col-md-6">
+					<b><h4>Tools and Technologies used</h4></b><p class="para">
+					The following tools are used while developing the project.
+					Front End Technologies: HTML, CSS, JSP, Java Script
+					Back End Technologies: Mysql
+					IDE and Server: NetBeans IDE (ver. 5.5), Apache Tomcat Web Server  </p>
+
+					<b><h4>Impact</h4></b><p class="para">
+					25 out of 30 Employees benefited from the website. The website helped the employees in maintaining all the records of consumables used and the expenses of Indian Oil Corporation Ltd. in purchasing these items. Backup of the entire database of the system could be taken from time to time.
+					It saved the time of officers of Indian oils in maintaining the records of consumables manually. The employees were able to make requests for the consumables they require by simply logging into the system and filling the issue form. The admin was able to view issued items easily. Data was updated automatically. Therefore, admin was able to manage the consumables in a proper way. The biggest benefit was that the admin was able to order the items which are running out of stock to the vendor in advance.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<b><h4>Reflections</h4></b><p class="para">
+			I realized that implementations of all features is tough. It is important to select 3-4 important features and stick to these to make a minimum viable product. It is hard to make a system that catered to the needs of all the personas. More time should be spent on making the affinity diagram to understand the user requirements</p>
+			
+			<div class="read_more">
+				<a href="project1.html">BACK</a>
+			</div>
+		</div>
+	</div>
+</div><!-- end main -->
+<div class="footer_bg" id="contact"><!-- start footer -->
+<div class="container">
+	<div class="row footer">
+		<div class="col-md-8 contact_left">
+			<h3>get in touch</h3>
+			<p>In order to get in touch use the contact form below:</h4>
+			<form name="myForm" method="post" action="contact.html" onsubmit="return(validate());">
+				<input type="text" name="fname" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+				<input type="text" name="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+				<input type="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+				<textarea onfocus="if(this.value == 'Your Message here....') this.value='';" onblur="if(this.value == '') this.value='Your Message here....;" >Your Message here....</textarea>
+				<span class="pull-right"><input type="submit" value="submit us"></span>
+			</form>
+		</div>
+		<div class="col-md-4  contact_right">
+			<p><span>A short summary about me: </span> Experienced Technology Analyst having successfully delivered a broad range of IT projects for clients in various domains. Proven track record in IT strategy and Project Management, Client Relationships and Web Technologies.</p>
+			<ul class="list-unstyled address">
+				<li><i class="fa fa-map-marker"></i><span>1929 Delaware Street, Berkeley</span></li>
+				<li><i class="fa fa-phone"></i><span>510 944 4203</span></li>
+				<li><i class="fa fa-envelope"></i><a href="mailto:pjain4161@gmail.com">pjain4161(at)gmail.com</a></li>
+			</ul>
+		</div>		
+	</div>
+</div>
+</div>
+<div class="footer1_bg"><!-- start footer1 -->
+	<div class="container">
+		<div class="row  footer">
+			<div class="copy text-center">
+				<p class="link"><span>&#169; All rights reserved | Template by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+				<a href="#home" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+		<script type="text/javascript">
+				$(function() {
+				  $('a[href*=#]:not([href=#])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				        $('html,body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+				      }
+				    }
+				  });
+				});
+		</script>
+		<!---- start-smoth-scrolling---->		
+	</div>
+</div>
+</body>
+</html>
